@@ -1,0 +1,741 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+header {
+  height: 70vh;
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center bottom 25%;
+  position: relative;
+}
+header h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-top: 2rem;
+  font-weight: 900;
+}
+
+.icon_arrow {
+  position: absolute;
+  left: 50%;
+  transform: translate(0%, 25%);
+}
+
+.arrow {
+  scale: 0.8;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 1.334rem;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  background-color: #fff;
+  color: hsl(213, 9%, 39%);
+  padding: 3rem 5.5rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 25%);
+  z-index: 1;
+}
+
+nav ul::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 1.3rem solid transparent;
+  border-right: 1.3rem solid transparent;
+
+  border-bottom: 1.3rem solid #fff;
+  position: absolute;
+  top: -0.7rem;
+  left: 17.06rem;
+  transform: rotate(135deg);
+}
+
+.nav_li:link,
+.nav_li:visited {
+  text-decoration: none;
+  color: hsl(232, 10%, 55%);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav_li:hover {
+  color: hsl(0, 0%, 100%, 0.3);
+}
+.nav_li:active {
+  color: hsl(0, 0%, 100%, 0.5);
+}
+
+nav ul li a:last-child {
+  color: hsl(212, 27%, 19%);
+  text-decoration: none;
+}
+
+.contact {
+  background-color: hsl(51, 100%, 49%);
+  padding: 0.7rem 1rem;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+}
+
+.negative {
+  display: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.box_t {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  flex-basis: 50%;
+  order: 2;
+  text-align: center;
+  padding: 1rem;
+}
+
+.text h2 {
+  font-family: "Fraunces", serif;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  color: hsl(232, 10%, 55%);
+  font-size: 1rem;
+}
+
+#one p:last-child {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  margin: 1rem 0rem;
+  margin-bottom: 0;
+  position: relative;
+  line-height: 0.8rem;
+}
+.yellow::after {
+  content: "";
+  background-color: #fff1c3;
+  position: absolute;
+  height: 0.6rem;
+  width: 8rem;
+  border-radius: 2rem;
+  top: 0.2rem;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: -1;
+}
+
+.yellow:hover::after {
+  background-color: hsl(51, 100%, 49%);
+  z-index: -1;
+  cursor: pointer;
+}
+
+#three p:last-child {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  margin: 1rem 0rem;
+  margin-bottom: 0;
+  position: relative;
+  line-height: 0.8rem;
+}
+.red::after {
+  content: "";
+  background-color: #ffdbd4;
+  position: absolute;
+  height: 0.6rem;
+  width: 8rem;
+  border-radius: 2rem;
+  top: 0.2rem;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: -1;
+}
+
+.red:hover::after {
+  background-color: hsl(7, 99%, 70%);
+  z-index: -1;
+  cursor: pointer;
+}
+
+.image {
+  flex-basis: 50%;
+  order: 1;
+}
+
+.text_cherry {
+  flex-basis: 50%;
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 18rem 0rem;
+
+  position: relative;
+}
+
+.text_c {
+  position: absolute;
+  bottom: 0.5rem;
+  padding: 1rem;
+
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: hsl(167, 40%, 24%);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.text_c h2 {
+  font-family: "Fraunces", serif;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+
+.text_c p {
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+.text_orange {
+  flex-basis: 50%;
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 18rem 0rem;
+
+  position: relative;
+}
+
+.text_o {
+  position: absolute;
+  bottom: 0.8rem;
+
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: hsl(198, 62%, 26%);
+}
+
+.text_o h2 {
+  font-family: "Fraunces", serif;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-weight: 900;
+
+  margin-top: 1rem;
+}
+
+.text_o p {
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+.box_t h3 {
+  margin: 2rem 0rem;
+  font-size: 1.2rem;
+
+  text-align: center;
+  color: hsl(210, 4%, 67%);
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.testemonial {
+  flex-basis: 30%;
+
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+
+.testemonial p {
+  color: hsl(213, 9%, 39%);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.testemonial img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#e,
+#t,
+#j {
+  font-size: 1.2rem;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+}
+#e_p,
+#t_p,
+#j_p {
+  color: hsl(210, 4%, 67%);
+}
+
+.images {
+  flex-basis: 50%;
+  display: flex;
+}
+
+footer {
+  background-color: hsl(167, 44%, 70%);
+  padding: 4rem 2rem;
+}
+
+.logo_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_fo {
+  stroke: #25564b;
+  fill: hsl(168, 34%, 41%);
+  font-size: 2rem;
+}
+
+.nav_footer {
+  margin: 1rem auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 3.5rem;
+}
+
+.nav_footer p {
+  color: hsl(167, 40%, 24%);
+}
+
+.nav_footer p:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.icons {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.icon {
+  color: hsl(167, 40%, 24%);
+  font-size: 1.5rem;
+}
+
+.icon:hover {
+  color: #fff;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 48rem) and (max-width: 63.938rem) {
+  .ham_icon {
+    display: none;
+  }
+  .negative {
+    display: block;
+  }
+  .wrapper {
+    position: relative;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1.5rem;
+    list-style: none;
+    background-color: none;
+    color: hsl(213, 9%, 39%);
+    background-color: transparent;
+    position: absolute;
+    top: -0.5rem;
+
+    left: 75%;
+    padding: 1rem 0rem;
+  }
+
+  .nav_li:link,
+  .nav_li:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .nav_li:hover {
+    color: hsl(0, 0%, 100%, 0.3);
+  }
+  .nav_li:active {
+    color: hsl(0, 0%, 100%, 0.5);
+  }
+
+  nav ul li a:last-child {
+    color: hsl(212, 27%, 19%);
+  }
+
+  .contact {
+    background-color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+  }
+
+  .contact:hover {
+    background-color: hsl(0, 0%, 100%, 0.3);
+    color: #fff;
+    transition: ease 0.5s;
+  }
+
+  .nav ul::after {
+    display: none;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .text {
+    text-align: start;
+    margin: auto 2rem;
+  }
+
+  #two {
+    flex-basis: 50%;
+    order: 2;
+  }
+
+  #one {
+    flex-basis: 40%;
+    order: 1;
+  }
+  #three {
+    flex-basis: 40%;
+  }
+
+  #four {
+    flex-basis: 50%;
+  }
+
+  .text_o,
+  .text_c {
+    position: absolute;
+    height: 30%;
+    bottom: 0;
+  }
+
+  .text_o h2,
+  .text_c h2 {
+    margin-bottom: 2rem;
+  }
+
+  .text_o p,
+  .text_c p {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    padding: 0rem 1rem;
+  }
+
+  #one p:last-child {
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    margin: 1rem 0rem;
+    margin-bottom: 0;
+    position: relative;
+    line-height: 0.8rem;
+  }
+  .yellow::after {
+    content: "";
+    background-color: #fff1c3;
+    position: absolute;
+    height: 0.6rem;
+    width: 8rem;
+    border-radius: 2rem;
+    top: 0.2rem;
+    left: 0;
+    transform: translate(-5%, 50%);
+    z-index: -1;
+  }
+
+  .yellow:hover::after {
+    background-color: hsl(51, 100%, 49%);
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  #three p:last-child {
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    margin: 1rem 0rem;
+    margin-bottom: 0;
+    position: relative;
+    line-height: 0.8rem;
+  }
+  .red::after {
+    content: "";
+    background-color: #ffdbd4;
+    position: absolute;
+    height: 0.6rem;
+    width: 8rem;
+    border-radius: 2rem;
+    top: 0.2rem;
+    left: 0;
+    transform: translate(-5%, 50%);
+    z-index: -1;
+  }
+
+  .red:hover::after {
+    background-color: hsl(7, 99%, 70%);
+    z-index: -1;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .ham_icon {
+    display: none;
+  }
+  .negative {
+    display: block;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+  .wrapper {
+    position: relative;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1.5rem;
+    list-style: none;
+    background-color: none;
+    color: hsl(213, 9%, 39%);
+    background-color: transparent;
+    position: absolute;
+    top: -0.5rem;
+    left: 82%;
+    padding: 1rem;
+  }
+
+  .nav_li:link,
+  .nav_li:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .nav_li:hover {
+    color: hsl(0, 0%, 100%, 0.3);
+  }
+  .nav_li:active {
+    color: hsl(0, 0%, 100%, 0.5);
+  }
+
+  nav ul li a:last-child {
+    color: hsl(212, 27%, 19%);
+  }
+
+  .contact {
+    background-color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+  }
+
+  .contact:hover {
+    background-color: hsl(0, 0%, 100%, 0.3);
+    color: #fff;
+    transition: ease 0.5s;
+  }
+
+  .nav ul::after {
+    display: none;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text {
+    text-align: start;
+    margin-top: 10rem;
+    margin-right: 2rem;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .text {
+    text-align: start;
+    margin: auto 2rem;
+  }
+  #two {
+    flex-basis: 50%;
+    order: 2;
+  }
+
+  #one {
+    flex-basis: 40%;
+    order: 1;
+  }
+  #three {
+    flex-basis: 40%;
+  }
+
+  #four {
+    flex-basis: 50%;
+  }
+
+  .text_o,
+  .text_c {
+    position: absolute;
+    height: 30%;
+    bottom: 0;
+    padding: 0rem 2rem;
+  }
+
+  .text_o h2,
+  .text_c h2 {
+    margin-bottom: 2rem;
+  }
+  #one p:last-child {
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    margin: 1rem 0rem;
+    margin-bottom: 0;
+    position: relative;
+    line-height: 0.8rem;
+  }
+  .yellow::after {
+    content: "";
+    background-color: #fff1c3;
+    position: absolute;
+    height: 0.6rem;
+    width: 8rem;
+    border-radius: 2rem;
+    top: 0.2rem;
+    left: 0;
+    transform: translate(-5%, 50%);
+    z-index: -1;
+  }
+
+  .yellow:hover::after {
+    background-color: hsl(51, 100%, 49%);
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  #three p:last-child {
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    margin: 1rem 0rem;
+    margin-bottom: 0;
+    position: relative;
+    line-height: 0.8rem;
+  }
+  .red::after {
+    content: "";
+    background-color: #ffdbd4;
+    position: absolute;
+    height: 0.6rem;
+    width: 8rem;
+    border-radius: 2rem;
+    top: 0.2rem;
+    left: 0;
+    transform: translate(-5%, 50%);
+    z-index: -1;
+  }
+
+  .red:hover::after {
+    background-color: hsl(7, 99%, 70%);
+    z-index: -1;
+    cursor: pointer;
+  }
+}
