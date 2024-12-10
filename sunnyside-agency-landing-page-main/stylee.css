@@ -260,7 +260,7 @@ main {
 .text_o {
   position: absolute;
   bottom: 0.8rem;
-
+  
   padding: 1rem;
   text-align: center;
   font-size: 1rem;
@@ -273,7 +273,7 @@ main {
   margin-bottom: 2rem;
   margin-top: 1rem;
   font-weight: 900;
-  text-align:center;
+ 
   margin-top: 1rem;
 }
 
@@ -680,7 +680,12 @@ footer {
   .text_o h2,
   .text_c h2 {
     margin-bottom: 2rem;
+  } 
+  .text_o h2{
+   text-align: center;
   }
+  
+  
   #one p:last-child {
     font-family: "Fraunces", serif;
     text-transform: uppercase;
