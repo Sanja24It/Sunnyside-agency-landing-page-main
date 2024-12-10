@@ -674,12 +674,13 @@ footer {
     position: absolute;
     height: 30%;
     bottom: 0;
+    
    
   }
   .text_o{
     padding: 2rem 4rem;
   }
-  .text_c
+  .text_c{
      padding: 0rem 2rem;
   }
 
